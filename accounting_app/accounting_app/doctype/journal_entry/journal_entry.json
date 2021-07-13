@@ -1,0 +1,66 @@
+{
+ "autoname": "field:journal_entry_id",
+ "creation": "2021-07-12 17:59:53.715786",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "journal_entry_id",
+  "accounting_details",
+  "date",
+  "party",
+  "reason",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "journal_entry_id",
+   "fieldtype": "Data",
+   "label": "Journal Entry Id",
+   "unique": 1
+  },
+  {
+   "fieldname": "accounting_details",
+   "fieldtype": "Link",
+   "label": "Accounting Details",
+   "options": "Party Account"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "party",
+   "fieldtype": "Link",
+   "label": "Party",
+   "options": "Party"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Data",
+   "label": "Reason"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Journal Entry",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "is_submittable": 1,
+ "istable": 1,
+ "modified": "2021-07-12 18:00:05.801432",
+ "modified_by": "Administrator",
+ "module": "Accounting App",
+ "name": "Journal Entry",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

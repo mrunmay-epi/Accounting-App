@@ -1,0 +1,66 @@
+{
+ "autoname": "field:party_name",
+ "creation": "2021-07-05 14:37:02.141583",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "party_id",
+  "party_name",
+  "account_balance",
+  "party_type",
+  "date"
+ ],
+ "fields": [
+  {
+   "fieldname": "party_id",
+   "fieldtype": "Data",
+   "label": "Party Id"
+  },
+  {
+   "fieldname": "party_name",
+   "fieldtype": "Data",
+   "label": "Party Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "account_balance",
+   "fieldtype": "Data",
+   "label": "Account Balance"
+  },
+  {
+   "fieldname": "party_type",
+   "fieldtype": "Select",
+   "label": "Party Type",
+   "options": "Seller\nCustomer"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Datetime",
+   "label": "Date"
+  }
+ ],
+ "modified": "2021-07-12 21:23:30.217133",
+ "modified_by": "Administrator",
+ "module": "Accounting App",
+ "name": "Party",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

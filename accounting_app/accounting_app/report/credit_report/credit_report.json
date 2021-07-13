@@ -1,0 +1,25 @@
+{
+ "add_total_row": 0,
+ "creation": "2021-07-09 19:50:36.086584",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2021-07-09 19:54:54.694059",
+ "modified_by": "Administrator",
+ "module": "Accounting App",
+ "name": "Credit Report",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT\n  `tabCredit`.name \nFROM\n  `tabCredit`",
+ "ref_doctype": "Credit",
+ "report_name": "Credit Report",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ]
+}
