@@ -5,15 +5,14 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "party_type",
-  "total_amount",
   "credit_to",
-  "assets_account",
-  "amended_from",
-  "date",
-  "quantity",
   "item",
-  "fiscal_year"
+  "total_amount",
+  "quantity",
+  "date",
+  "amended_from",
+  "fiscal_year",
+  "purchase_invoice_id"
  ],
  "fields": [
   {
@@ -24,15 +23,10 @@
   {
    "fieldname": "credit_to",
    "fieldtype": "Link",
-   "label": "Credit To",
+   "in_list_view": 1,
+   "label": "Party",
    "options": "Party",
    "unique": 1
-  },
-  {
-   "fieldname": "assets_account",
-   "fieldtype": "Link",
-   "label": "Assets Account",
-   "options": "Party Account"
   },
   {
    "fieldname": "amended_from",
@@ -47,15 +41,6 @@
    "fieldname": "date",
    "fieldtype": "Datetime",
    "label": "Date"
-  },
-  {
-   "fieldname": "party_type",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "Party Type",
-   "options": "Party",
-   "reqd": 1,
-   "unique": 1
   },
   {
    "fieldname": "quantity",
@@ -73,10 +58,15 @@
    "fieldtype": "Link",
    "label": "Fiscal Year",
    "options": "Fiscal Year"
+  },
+  {
+   "fieldname": "purchase_invoice_id",
+   "fieldtype": "Data",
+   "label": "Purchase Invoice Id"
   }
  ],
  "is_submittable": 1,
- "modified": "2021-07-12 16:58:47.855597",
+ "modified": "2021-07-13 19:57:09.762891",
  "modified_by": "Administrator",
  "module": "Accounting App",
  "name": "Purchase Invoice",

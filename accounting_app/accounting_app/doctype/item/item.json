@@ -7,8 +7,9 @@
  "field_order": [
   "item_id",
   "item_name",
-  "item_uom",
-  "selling_rate"
+  "selling_rate",
+  "quantity",
+  "description"
  ],
  "fields": [
   {
@@ -23,17 +24,22 @@
    "unique": 1
   },
   {
-   "fieldname": "item_uom",
-   "fieldtype": "Data",
-   "label": "Item UOM"
-  },
-  {
    "fieldname": "selling_rate",
    "fieldtype": "Data",
    "label": "Selling Rate"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Data",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
   }
  ],
- "modified": "2021-07-12 17:19:21.313814",
+ "modified": "2021-07-13 18:52:23.196682",
  "modified_by": "Administrator",
  "module": "Accounting App",
  "name": "Item",

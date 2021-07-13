@@ -9,7 +9,10 @@
   "party_name",
   "account_balance",
   "party_type",
-  "date"
+  "date",
+  "email_id",
+  "address",
+  "contact_number"
  ],
  "fields": [
   {
@@ -38,9 +41,24 @@
    "fieldname": "date",
    "fieldtype": "Datetime",
    "label": "Date"
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email Id"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "contact_number",
+   "fieldtype": "Data",
+   "label": "Contact Number"
   }
  ],
- "modified": "2021-07-12 21:23:30.217133",
+ "modified": "2021-07-13 18:46:07.226341",
  "modified_by": "Administrator",
  "module": "Accounting App",
  "name": "Party",

@@ -5,13 +5,14 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "total_amount",
   "debit_to",
+  "item",
+  "total_amount",
+  "quantity",
   "date",
   "amended_from",
-  "item",
   "fiscal_year",
-  "quantity"
+  "sales_invoice_id"
  ],
  "fields": [
   {
@@ -22,7 +23,7 @@
   {
    "fieldname": "debit_to",
    "fieldtype": "Link",
-   "label": "Debit To",
+   "label": "Party  ",
    "options": "Party",
    "unique": 1
   },
@@ -59,10 +60,15 @@
    "fieldname": "quantity",
    "fieldtype": "Data",
    "label": "Quantity"
+  },
+  {
+   "fieldname": "sales_invoice_id",
+   "fieldtype": "Data",
+   "label": "Sales Invoice Id"
   }
  ],
  "is_submittable": 1,
- "modified": "2021-07-12 16:44:43.428146",
+ "modified": "2021-07-13 19:43:20.880697",
  "modified_by": "Administrator",
  "module": "Accounting App",
  "name": "Sales Invoice",

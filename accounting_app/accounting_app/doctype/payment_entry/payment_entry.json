@@ -11,7 +11,7 @@
   "paid_to",
   "payment_amount",
   "amended_from",
-  "purchase_invoice",
+  "purchase_invoice_number",
   "payment_transaction_id",
   "sales_invoice_number"
  ],
@@ -54,11 +54,6 @@
    "read_only": 1
   },
   {
-   "fieldname": "purchase_invoice",
-   "fieldtype": "Data",
-   "label": "Purchase Invoice Number"
-  },
-  {
    "fieldname": "payment_transaction_id",
    "fieldtype": "Data",
    "label": "Payment Transaction Id",
@@ -68,10 +63,15 @@
    "fieldname": "sales_invoice_number",
    "fieldtype": "Data",
    "label": "Sales Invoice Number"
+  },
+  {
+   "fieldname": "purchase_invoice_number",
+   "fieldtype": "Data",
+   "label": "Purchase Invoice Number"
   }
  ],
  "is_submittable": 1,
- "modified": "2021-07-12 17:51:32.568257",
+ "modified": "2021-07-13 19:18:00.244683",
  "modified_by": "Administrator",
  "module": "Accounting App",
  "name": "Payment Entry",
