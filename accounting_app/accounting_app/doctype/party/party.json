@@ -58,25 +58,12 @@
    "label": "Contact Number"
   }
  ],
- "modified": "2021-07-13 18:46:07.226341",
+ "modified": "2021-07-29 12:16:43.805533",
  "modified_by": "Administrator",
  "module": "Accounting App",
  "name": "Party",
  "owner": "Administrator",
- "permissions": [
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "System Manager",
-   "share": 1,
-   "write": 1
-  }
- ],
+ "permissions": [],
  "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
