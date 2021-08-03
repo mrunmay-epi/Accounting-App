@@ -25,19 +25,20 @@ def execute(filters=None):
 
 
 def get_data(filters):
-    if (filters.get('party') or filters.get('to_date') or filters.get('from_date')):        
-        query1 = 'select * from `tabParty` {} order by date desc'.format(conditions(filters))
-
+    if (filters.get('party01') or filters.get('to_date') or filters.get('from_date')):        
+        query1 = 'select * from `tabParty01` {} order by date desc'.format(conditions(filters))
         data = frappe.db.sql(query1, filters, as_dict=1)
         return data
     else:        
-        query1 = 'select * from `tabParty` order by date desc'
+        query1 = 'select * from `tabParty01` order by date desc'
         data = frappe.db.sql(query1, as_dict=1)
+
+    print("---------------------",query1)
 
     return data
 
 def conditions(filters):    
-    party = filters.get('party')
+    party01 = filters.get('party01')
     from_date = filters.get('from_date')
     to_date = filters.get('to_date')
     conditions = []
@@ -48,8 +49,8 @@ def conditions(filters):
     else:
         conditions += ["date >= '{}' and date <= '{}'".format(from_date, to_date)]       
     
-    if filters.get('party'):
-        conditions += ["party_name = '{}'".format(party)]
+    if filters.get('party01'):
+        conditions += ["party_name = '{}'".format(party01)]
 
     where_conditions = 'where {}'.format(' and '.join(conditions))    
     return where_conditions
@@ -60,12 +61,23 @@ def get_columns():
         'label': 'Party',
         'fieldname': 'party_name',
         'fieldtype': 'Link',
-        'options': 'Party',
+        'options': 'Party01',
         },{
         'label': 'Balance',
         'fieldname': 'account_balance',
-        'fieldtype': 'Data',
+        'fieldtype': 'Float',
         'options': 'Balance',
+        },{
+        'label': 'Email',
+        'fieldname': 'email_id',
+        'fieldtype': 'Data',
+        'options': 'Email',
+        },
+        {
+        'label': 'Contact No.',
+        'fieldname': 'contact_number',
+        'fieldtype': 'Int',
+        'options': 'Contact No.',
         }]
 
     return columns

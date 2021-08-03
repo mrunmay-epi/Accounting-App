@@ -5,11 +5,10 @@
 frappe.query_reports["General Ledger Report"] = {
 	"filters": [
 		{
-            "fieldname":"party",
+            "fieldname":"party01",
             "label": __("Party"),
             "fieldtype": "Link",
-            "options": "Party",
-            "default": frappe.defaults.get_user_default("Party")
+            "options": "Party01",
         },
 		{
 			"fieldname":"from_date",
